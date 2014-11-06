@@ -1,11 +1,63 @@
+body {
+  background-color: rgb(0,136,0);
+  margin: 0;
+  padding: 0 2em;
+}
+#page-wrapper {
+  width: 960px;
+  background-color: white;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+#page-header, #content, #navbar {
+  padding: 0 1em;
+}
+
+#page-header{
+  padding-top: 1em;
+}
+
+
+#page-header img {
+  vertical-align: middle;
+}
+
 h1 {
-  font-family: Georgia Times serif;
+  font-family: "Georgia", "Times", serif;
   font-size: 3em;
   font-style: italic;
+  display: inline-block;
+  margin: 0;
+  vertical-align: middle;
+}
+
+#navbar{
+  background-color: #333;
+  }
+  
+#navbar ul{
+  padding: 0;
+ }
+
+#navbar ul li {
+  display: inline-block;
+}
+
+#navbar a{
+  color: #CCFFCC;
+  text-decoration: none;
+  padding: 0.25em;
+  display: inline-block;
+}
+
+#navbar a:hover{
+  background-color: #666;
+  text-shadow: 2px 2px #333;
 }
 
 #pagetitle{
-  font-family: Georgia TImes serif;
+  font-family: "Georgia", "Times", serif;
   font-size: 1.8em;
   font-weight: bold;
 }
