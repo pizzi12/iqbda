@@ -1,14 +1,14 @@
 body {
   background-color: rgb(0,136,0);
   margin: 0;
-  padding: 0 2em;
+  padding: 0;
+font: 1em Verdana, Helvetica, Arial, sans-serif;
 }
 #page-wrapper {
   width: 960px;
   background-color: white;
   margin: 0 auto;
-  padding: 1em;
-}
+  }
 
 #page-header, #content, #navbar {
   padding: 0 1em;
@@ -16,24 +16,41 @@ body {
 
 #page-header{
   padding-top: 1em;
+  position: relative;
 }
 
 
-#page-header img {
-  vertical-align: middle;
-}
-
-h1 {
-  font-family: "Georgia", "Times", serif;
-  font-size: 3em;
-  font-style: italic;
+#page-header h1{
+  font: bold italic3em "Georgia", "Times", serif;
   display: inline-block;
   margin: 0;
   vertical-align: middle;
 }
 
+#page-header h2{
+  font: bolder italic 1.5em "Georgia", "Times", serif;
+}
+
+#user-links{
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+
+#user-links a {
+  color: darkgreen;
+  text-decoration: none;
+}
+
+
+#user-links a:hover {
+  text-decoration: underline;  
+}
+
+
 #navbar{
   background-color: #333;
+  padding-left: 1em;
   }
   
 #navbar ul{
@@ -56,40 +73,38 @@ h1 {
   text-shadow: 2px 2px #333;
 }
 
-#pagetitle{
-  font-family: "Georgia", "Times", serif;
-  font-size: 1.8em;
-  font-weight: bold;
-}
-
-#pagetitle h2 {
-  font-family: Georgia Times serif;
-  font-size: 1.5em;
-  font-weight: 700;
-  }
-
-p {
-  font-family: Verdana Helvetica Arial sans serif;
-  font-size: 1em;;
-  font-weight: normal;
-}
-
-h2 h1 {
-  font-size: 1.5em;
-  font-weight:500;
-}
 
 #page-title h1 {
-  color:red;
-  font-style: normal;
-  font-size: 1.8em;
-  font-weight: 700;
+  font: bold 1.8em "Georgia", "Times", serif;
 }
 
-#page-header h2{
-  font-style: italic;
+#page-header img {
+  vertical-align: middle;
 }
 
-tr th {
-  text-align: left;
+
+h2{
+  font: bolder 1.5em "Georgia", "Times", serif;
 }
+
+
+th, td {
+  padding: 6px;
+}
+
+tr:nth-child(odd){
+  background-color: #eee;
+}
+
+label{
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+
+
+input[type=radio] + label, input[type=checkbox] + {
+  font-weight: normal;
+  display: inline;
+  }
+
